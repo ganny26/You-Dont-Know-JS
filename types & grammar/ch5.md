@@ -47,7 +47,7 @@ In fact, if you've done much code experimenting in your console (or in a JavaScr
 
 But what the console prints out for the completion value isn't something we can use inside our program. So how can we capture the completion value?
 
-That's a much more complicated task. Before we explain *how*, let's explore *why* would you want to do that?
+That's a much more complicated task. Before we explain *how*, let's explore *why* you would want to do that.
 
 We need to consider other types of statement completion values. For example, any regular `{ .. }` block has a completion value of the completion value of its last contained statement/expression.
 
@@ -464,7 +464,7 @@ var a = res.a;
 var b = res.b;
 ```
 
-**Note:** `{ a, b }` is actually ES6 destructuring shorthand for `{ a: a, b: b }`, so either will work, but it's expected that the shorter `{ a, b }` will be become the preferred form.
+**Note:** `{ a, b }` is actually ES6 destructuring shorthand for `{ a: a, b: b }`, so either will work, but it's expected that the shorter `{ a, b }` will become the preferred form.
 
 Object destructuring with a `{ .. }` pair can also be used for named function arguments, which is sugar for this same sort of implicit object property assignment:
 
